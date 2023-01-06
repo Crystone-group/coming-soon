@@ -23,12 +23,10 @@ body {
 
 .top_logo {
   width: 40%;
-  outline: 3px solid red;
   min-width: 100px;
 }
 
 .header__navbar__nav {
-  outline: 3px solid red;
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -37,7 +35,6 @@ body {
 }
 
 .header__navbar__nav__ul {
-  outline: 3px solid red;
   display: flex;
   gap: 20px;
   text-align: center;
