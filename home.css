@@ -7,7 +7,13 @@
   list-style-type: none;
 }
 
+:root {
+  width: 99.999%;
+  overflow: hidden auto;
+}
+
 body {
+  width: 99.999%;
   font-family: "poppins";
   padding: 0 3%;
   overflow: hidden auto;
