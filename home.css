@@ -74,13 +74,15 @@ label[for="toggle_nav"] {
   .header__navbar__nav {
     justify-content: end;
     flex-direction: row-reverse;
+    overflow: hidden;
   }
 
   .header__navbar__nav__ul {
     position: absolute;
     top: 90%;
-    left: 0;
-    right: 0;
+    left: -120%;
+    right: 120%;
+    overflow: hidden;
     padding: 20px 0;
     background-color: rgba(0, 128, 0, 0.193);
     border-bottom-left-radius: 15px;
@@ -89,6 +91,11 @@ label[for="toggle_nav"] {
 
   .header__navbar__nav__ul li a {
     color: black;
+  }
+
+  #toggle_nav:checked ~ .header__navbar__nav__ul {
+    right: 0;
+    left: 0;
   }
 
   label[for="toggle_nav"] {
@@ -102,10 +109,6 @@ label[for="toggle_nav"] {
 
   label[for="toggle_nav"] p {
     font-size: 20px;
-  }
-
-  #toggle_nav:checked ~ .header__navbar__nav__ul {
-    display: none;
   }
 
   #toggle_nav:checked ~ label[for="toggle_nav"] {
